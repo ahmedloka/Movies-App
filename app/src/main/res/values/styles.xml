@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- detail activity , button -->
+    <style name="iv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- mianActivity -->
+    <style name="text_view_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- progressBar -->
+    <style name="progress_bar_main">
+        <item name="android:layout_width">69dp</item>
+        <item name="android:shadowColor">@color/colorTeal</item>
+        <item name="android:layout_height">63dp</item>
+        <item name="android:layout_gravity">center_horizontal|center</item>
+    </style>
+    <!-- mianActivity 600sw-->
+    <style name="text_view_main_600sw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- progressBar -->
+    <style name="progress_bar_main_600sw">
+        <item name="android:layout_width">109dp</item>
+        <item name="android:shadowColor">@color/colorTeal</item>
+        <item name="android:layout_height">136dp</item>
+    </style>
+
+    <!--movieDetails-->
+    <style name="progress_detail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+
+</resources>

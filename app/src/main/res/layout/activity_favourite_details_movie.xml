@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.movieStage1.FavouriteDetailsMovie">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.example.android.movieStage1.MovieDetails">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/colorTeal">
+
+
+                    <TextView
+                        android:gravity="start"
+                        android:id="@+id/movie_title_tv"
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="22dp"
+                        android:paddingStart="22dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp" />
+                </android.support.v7.widget.Toolbar>
+
+
+                    <LinearLayout
+                        android:layout_margin="20dp"
+                        android:padding="24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/release_year_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/rate_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/btn_rmv_favourite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="58dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/action_remove"/>
+
+                    </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/movie_synopsis_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_gravity="center"
+                    android:padding="22dp"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@color/colorBlack"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+</layout>

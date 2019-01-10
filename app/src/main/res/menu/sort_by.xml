@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/item_sort_by_popular"
+            android:title="@string/action_popular_movies" />
+
+        <item
+            android:id="@+id/item_sort_by_most_rated"
+            android:title="@string/action_most_rated_movies" />
+    </group>
+
+    <item
+        android:id="@+id/favourite_movies"
+        android:title="@string/action_favourite_movies" />
+</menu>

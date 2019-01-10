@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.movieStage1.MainActivity">
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/movies_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal|center"
+        style="@style/progress_bar_main"/>
+    <TextView
+        android:id="@+id/error_text_view"
+        android:textSize="22sp"
+        android:padding="16dp"
+        android:text="@string/error_name"
+        style="@style/text_view_main"
+        />
+
+
+
+    </FrameLayout>
+</layout>

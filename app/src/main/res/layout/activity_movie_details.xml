@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.example.android.movieStage1.MovieDetails">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/progress_detail"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="59dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/colorTeal">
+
+
+                    <TextView
+                        android:id="@+id/movie_title_tv"
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="22dp"
+                        android:paddingStart="22dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp" />
+                </android.support.v7.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="22dp">
+                    <!-- TODO check content -->
+                    <ImageView
+                        android:id="@+id/movie_poster_iv"
+                        android:layout_width="120dp"
+                        android:layout_height="200dp"
+                        android:layout_weight="40"
+                        android:contentDescription="@string/img_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_weight="60"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/release_year_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/rate_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+
+                        <ToggleButton
+                            android:id="@+id/btn_favourite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="58dp"
+                            android:checked="false"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@color/colorBlack"
+                            android:textOff="@string/action_add"
+                            android:textOn=" " />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/movie_synopsis_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="22dp"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="17sp" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@color/colorBlack"
+                    />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/trailers"
+                    android:textColor="@color/colorGrey" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_trailers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@color/colorBlack"
+                    />
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="22dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/review_label"
+                    android:textColor="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/videoCotent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="22dp"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>
